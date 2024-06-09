@@ -54,7 +54,7 @@ function createComment() {
 	if (checkYes.checked) {
 		newName.textContent = `Имя: ${cleanNameValue}`;
 	} else if (checkNo.checked) {
-		newName.textContent = `Имя: Аноним`;
+		newName.textContent = `Имя: Username`;
 	}
 	//Задаем стили для имени пользователя
 	newName.style.fontWeight = `bold`;
