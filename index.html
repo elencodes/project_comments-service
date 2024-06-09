@@ -13,8 +13,13 @@
 	<section class="section">
 		<div class="form">
 			<h2>Оставьте ваш комментарий</h2>
-			<form action="#">
+			<div>
 				<div>
+					<p>Показывать ваше имя?</p>
+					<input type="checkbox" name="Да" id="Yes" value="Да" onclick="showUserName()"> Да
+					<input type="checkbox" name="Нет" id="No" value="Нет" onclick="hiddenUserName()"> Нет
+				</div>
+				<div id="nameInput">
 					<p><label for="name">Введите ваше Имя:</label></p>
 					<input id="name" type="text">
 				</div>
@@ -22,15 +27,17 @@
 					<p><label for="avatar">Введите ссылку вашего аватара:</label></p>
 					<input id="avatar" type="url">
 				</div>
+				<p id="currenTime" class="show__time"></p>
 				<div>
 					<p><label for="comment">Оставьте комментарий:</label></p>
 					<textarea name="comment" id="comment"></textarea>
 				</div>
 				<button id="button" type="submit">Отправить</button>
-			</form>
+			</div>
 		</div>
-		<div class="chat" id="result">
+		<div class="chat">
 			<h2>Чат</h2>
+			<div id="result"></div>
 		</div>
 	</section>
 	<script src="js/script.js"></script>
