@@ -49,7 +49,7 @@ function createComment() {
 	//7.2 Изменяем только первую букву в переменной userNameValue на заглавную и сохраняем результат в переменную modifiedNameValue.
 	const modifiedNameValue = userNameValue.charAt(0).toUpperCase() + userNameValue.slice(1).toLowerCase();
 	//7.3 Удаляем лишние пробелы из переменной modifiedNameValue и сохраняем результат в переменную cleanNameValue.
-	const cleanNameValue = modifiedNameValue.replace(/ /g, ``);
+	const cleanNameValue = modifiedNameValue.trim();
 	//7.4 При добавлении/скрытии имени пользователя будет отображаться разный контент
 	if (checkYes.checked) {
 		newName.textContent = `Имя: ${cleanNameValue}`;
