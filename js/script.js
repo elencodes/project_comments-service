@@ -41,7 +41,7 @@ function createComment() {
 	showDate.style.color = `#FD59CC`;
 	showDate.style.fontSize = `0.875rem`;
 	//6.2 Наполняем новый элемент контентом (выводим дату)
-	showDate.textContent = `${showCurrentDate.toLocaleDateString()}`;
+	showDate.textContent = `${showCurrentDate.toLocaleDateString()} ${showCurrentDate.toLocaleTimeString()}`;
 	//6.3 Вставляем новый элемент (дату) внутрь и в начало Сообщения пользователя
 	newComment.appendChild(showDate);
 	//7.1. Присваиваем переменной userNameValue значение поля ввода имени пользователя и применяем спам фильтр
